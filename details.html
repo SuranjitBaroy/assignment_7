@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details - Alex Johnson</title>
+    <title>Details - KeenKeeper</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" />
 </head>
-<body class="bg-white min-h-screen">
+<body class="bg-white min-h-screen flex flex-col">
 
     <nav class="flex justify-between items-center p-5 bg-white border-b">
         <div class="text-2xl font-bold text-emerald-900">KeenKeeper</div>
@@ -18,27 +18,24 @@
         </div>
     </nav>
 
-    <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <!-- Left: Info -->
-        <div class="card border p-8 text-center shadow-sm">
+    <main class="flex-grow max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
+        <div class="card border p-8 text-center shadow-sm h-fit bg-white">
             <img src="https://i.pravatar.cc/150?u=1" class="w-32 h-32 rounded-full mx-auto" />
             <h2 class="text-2xl font-bold mt-4">Alex Johnson</h2>
-            <span class="badge badge-success text-white my-3">Active</span>
+            <span class="badge badge-success text-white py-3 my-3">Active</span>
             <div class="space-y-2 mt-6">
                 <button class="btn btn-outline btn-block btn-sm">Snooze</button>
                 <button class="btn btn-outline btn-error btn-block btn-sm">Delete</button>
             </div>
         </div>
 
-        <!-- Right: Stats and Check-in -->
         <div class="lg:col-span-2 space-y-6">
             <div class="grid grid-cols-3 gap-4">
-                <div class="card border p-4 text-center"><strong>05</strong><p class="text-[10px]">DAYS SINCE</p></div>
-                <div class="card border p-4 text-center"><strong>07</strong><p class="text-[10px]">GOAL</p></div>
-                <div class="card border p-4 text-center"><strong>MAY 05</strong><p class="text-[10px]">NEXT DUE</p></div>
+                <div class="card border p-4 text-center"><strong>05</strong><p class="text-[10px] text-gray-400">DAYS SINCE</p></div>
+                <div class="card border p-4 text-center"><strong>07</strong><p class="text-[10px] text-gray-400">GOAL</p></div>
+                <div class="card border p-4 text-center text-emerald-600"><strong>MAY 05</strong><p class="text-[10px] text-gray-400">NEXT DUE</p></div>
             </div>
 
-            <!-- Check-in Buttons -->
             <div class="card border p-8 bg-emerald-950 text-white text-center">
                 <h4 class="font-bold mb-6">Quick Check-In</h4>
                 <div class="grid grid-cols-3 gap-4">
@@ -48,7 +45,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="bg-emerald-950 text-white py-8 text-center px-4">
+        <p class="text-xs text-gray-500">© 2026 KeenKeeper</p>
+    </footer>
 
 </body>
 </html>
