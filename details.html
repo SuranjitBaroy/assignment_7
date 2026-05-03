@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details - Alex Johnson</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" />
+</head>
+<body class="bg-white min-h-screen">
+
+    <nav class="flex justify-between items-center p-5 bg-white border-b">
+        <div class="text-2xl font-bold text-emerald-900">KeenKeeper</div>
+        <div class="flex gap-6">
+            <a href="index.html" class="text-gray-500">Home</a>
+            <a href="timeline.html" class="text-gray-500">Timeline</a>
+            <a href="stats.html" class="text-gray-500">Stats</a>
+        </div>
+    </nav>
+
+    <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Left: Info -->
+        <div class="card border p-8 text-center shadow-sm">
+            <img src="https://i.pravatar.cc/150?u=1" class="w-32 h-32 rounded-full mx-auto" />
+            <h2 class="text-2xl font-bold mt-4">Alex Johnson</h2>
+            <span class="badge badge-success text-white my-3">Active</span>
+            <div class="space-y-2 mt-6">
+                <button class="btn btn-outline btn-block btn-sm">Snooze</button>
+                <button class="btn btn-outline btn-error btn-block btn-sm">Delete</button>
+            </div>
+        </div>
+
+        <!-- Right: Stats and Check-in -->
+        <div class="lg:col-span-2 space-y-6">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="card border p-4 text-center"><strong>05</strong><p class="text-[10px]">DAYS SINCE</p></div>
+                <div class="card border p-4 text-center"><strong>07</strong><p class="text-[10px]">GOAL</p></div>
+                <div class="card border p-4 text-center"><strong>MAY 05</strong><p class="text-[10px]">NEXT DUE</p></div>
+            </div>
+
+            <!-- Check-in Buttons -->
+            <div class="card border p-8 bg-emerald-950 text-white text-center">
+                <h4 class="font-bold mb-6">Quick Check-In</h4>
+                <div class="grid grid-cols-3 gap-4">
+                    <a href="timeline.html" class="btn bg-white text-emerald-900 border-none">Call</a>
+                    <a href="timeline.html" class="btn bg-white text-emerald-900 border-none">Text</a>
+                    <a href="timeline.html" class="btn bg-white text-emerald-900 border-none">Video</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
